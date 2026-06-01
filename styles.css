@@ -1,0 +1,42 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 24px;
+    background-color:rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-bar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+ul li a:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+body {
+    background-color:rgb(233, 235, 236);
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color:rgb(42, 42, 42);
+    font-size: 60px;
+    text-align: center;
+}
