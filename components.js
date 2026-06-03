@@ -10,10 +10,6 @@ async function loadComponent(id, path) {
 function initThemeToggle() {
     const theme_toggle = document.getElementById('theme-toggle');
 
-    if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.toggle('dark');
-    }
-
     if (!theme_toggle) return;
     theme_toggle.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark');

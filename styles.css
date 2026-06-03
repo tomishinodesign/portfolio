@@ -41,6 +41,7 @@ ul li a:hover {
 
 h1, h2, h3 {
     color: var(--text);
+    transition: color 0.3s ease;
     text-align: center;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -50,6 +51,7 @@ h1, h2, h3 {
 body {
     background-color: var(--bg);
     color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
     font-size: 30px;
     margin-left: auto;
     margin-right: auto;
