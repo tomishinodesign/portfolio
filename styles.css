@@ -1,10 +1,22 @@
+:root {
+    --bg: #fafafa;
+    --text: #111111;
+    --accent: #0099cc;
+}
+
+:root.dark {
+    --bg: #111111;
+    --text: #f0f0f0;
+    --accent: #33ccee;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0 24px;
     background-color:rgb(80, 80, 80);
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 8px;
 }
 
@@ -28,7 +40,7 @@ ul li a:hover {
 }
 
 h1, h2, h3 {
-    color:rgb(42, 42, 42);
+    color: var(--text);
     text-align: center;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -36,7 +48,8 @@ h1, h2, h3 {
 }
 
 body {
-    background-color:rgb(233, 235, 236);
+    background-color: var(--bg);
+    color: var(--text);
     font-size: 30px;
     margin-left: auto;
     margin-right: auto;
