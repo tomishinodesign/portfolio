@@ -1,3 +1,4 @@
+/* ------Website base colour------ */
 :root {
     --bg: #fafafa;
     --text: #111111;
@@ -10,6 +11,7 @@
     --accent: #33ccee;
 }
 
+/* ------Navigation bar------ */
 ul {
     list-style-type: none;
     margin: 0 0 30px 0;
@@ -35,12 +37,7 @@ ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
+/* ------Text and font------ */
 h1, h2, h3 {
     color: var(--text);
     transition: color 0.3s ease;
@@ -60,6 +57,7 @@ p + p {
     margin-bottom: 1rem;
 }
 
+/* ------Main styles------ */
 body {
     background-color: var(--bg);
     color: var(--text);
@@ -72,6 +70,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .about-quote {
