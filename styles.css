@@ -1,14 +1,25 @@
 /* ------Website base colour------ */
 :root {
     --bg: #fafafa;
+    --bgdark: #e7e7e7;
     --text: #111111;
     --accent: #0099cc;
+    --shadow: rgba(0, 0, 0, 0.2);
 }
 
 :root.dark {
     --bg: #222222;
+    --bgdark: #333333;
     --text: #f0f0f0;
     --accent: #33ccee;
+    --shadow: rgba(0, 0, 0, 0.7);
+}
+
+/* ------Reset styles------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ------Fade in text------ */
@@ -26,7 +37,7 @@
 /* ------Navigation bar------ */
 ul {
     list-style-type: none;
-    margin: 0 0 30px 0;
+    margin: 0 0 32px 0;
     padding: 0 24px;
     background-color:rgb(80, 80, 80);
     display: flex;
@@ -38,15 +49,40 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 0.7em;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 ul li a:hover {
     background-color: rgb(40, 40, 40);
     transition: background-color 0.3s ease;
+}
+
+#theme-toggle {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-size: 0.5em;
+}
+
+/* ------Footer------ */
+.footer-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(80, 80, 80);
+    margin-top: 50px;
+    padding: 16px 16px;
+    font-size: 0.8rem;
+}
+
+.footer-text {
+    color: white;
+    text-decoration: none;
 }
 
 /* ------Text and font------ */
@@ -66,7 +102,7 @@ p {
 }
 
 p + p {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 /* ------Main styles------ */
@@ -74,7 +110,7 @@ body {
     background-color: var(--bg);
     color: var(--text);
     transition: background 0.3s ease, color 0.3s ease;
-    font-size: 30px;
+    font-size: 32px;
     margin-left: auto;
     margin-right: auto;
 
@@ -82,6 +118,14 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 .container {
@@ -95,9 +139,44 @@ body {
     font-family: "DM Serif Display", serif;
     line-height: 1.4;
     margin-bottom: 2rem;
+}
+
+.fade {
     animation: fadeIn 0.8s ease forwards;
 }
 
-.about-content {
-    animation: fadeIn 0.8s ease forwards;
+/* ------Projects------ */
+.project-space {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgdark);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--shadow);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+    padding: 16px;
 }

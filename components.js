@@ -5,6 +5,7 @@ async function loadComponent(id, path) {
     document.getElementById(id).innerHTML = html;
 
     if (id === 'navbar') initThemeToggle();
+    if (id === 'footer') injectEmail();
 }
 
 function initThemeToggle() {
@@ -27,4 +28,13 @@ function initThemeToggle() {
     });
 }
 
-loadComponent('navbar', 'components/navbar.html');
+function injectEmail() {
+    const user = 'ti37p';
+    const domain = 'protonmail.com';
+    const link = document.getElementById('email-link');
+    link.href = `mailto:${user}@${domain}`;
+    link.textContent = `${user}@${domain}`;
+}
+
+loadComponent('navbar', '/components/navbar.html');
+loadComponent('footer', '/components/footer.html');
