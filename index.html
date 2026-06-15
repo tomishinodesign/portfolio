@@ -13,23 +13,27 @@
 
         <script>
             if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
+                document.documentElement.classList.add('dark');
             }
         </script>
 
     </head>
     <body>
-        <div id="navbar"></div>
-
         <main>
-            <div class="container">
-                <h1 class="fade">Welcome to my portfolio!</h1>
-                <p class="fade">This is where all my portfolio content will go!</p>
-                <p class="fade">New updates to the website, every day!</p>
-            </div>
+            <section class="hero">
+                <div class="image-block-top"><img src="media/images/hero.jpg" alt="Steam iron image"></div>
+                <div class="image-block-bottom"></div>
+                <div class="hero-text">
+                    <h1 class="hero-headline">Many things work,<br>few things resonate.</h1>
+                    <p class="hero-subtext">Filling the gap between design that works and design that matters.</p>
+                    <p class="hero-name">Tomohiro Ishino</p>
+                </div>
+                <div class="navigation">
+                    <a class="nav-element" href="about.html">About</a>
+                    <a class="nav-element" href="projects/index.html">Projects</a>
+                </div>
+            </section>
         </main>
-
-        <div id="footer"></div>
         
         <script src="components.js"></script>
         <script src="main.js"></script>
