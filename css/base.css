@@ -1,0 +1,17 @@
+p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+p + p {
+    margin-bottom: 20px;
+}
+
+.content-section {
+    max-width: 80%;
+}
+
+.content-section-header {
+    font-size: 2rem;
+    margin: 15px auto 15px auto;
+}

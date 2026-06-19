@@ -1,0 +1,88 @@
+/* ######################################################## */
+/*                       IMPORTS                            */
+/* ######################################################## */
+
+@import url('reset.css');
+@import url('variables.css');
+@import url('base.css');
+@import url('sections.css');
+
+/* ######################################################## */
+/*                       INITIAL                            */
+/* ######################################################## */
+
+/* @view-transition {
+  navigation: auto;
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ######################################################## */
+/*                         MAIN                             */
+/* ######################################################## */
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.fade {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* ---------Sub Hero--------- */
+.sub-hero {
+    display: flex;
+    margin: 15px auto;
+    align-items: center;
+    gap: 16px;
+    padding: 3rem 12%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sub-hero-box {
+    flex: 1;
+}
+
+.sub-hero-img {
+    flex: 1.618;
+}
+
+.sub-hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

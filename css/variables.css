@@ -1,0 +1,9 @@
+/* ------Variables------ */
+:root {
+    --bg: #181818;
+    --bgdark: #242424;
+    --text: #f0f0f0;
+    --light-text: #909090;
+    --accent: #33ccee;
+    --shadow: rgba(0, 0, 0, 0.7);
+}
