@@ -4,32 +4,145 @@
     <head>
         <title>Tomohiro Ishino</title>
         <link rel="stylesheet" href="/css/main.css">
-        <link rel="icon" href="/media/images/logo_test.png">
+        <link rel="icon" href="/media/logo/TI-logo-black.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-        <script>
-            if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-            }
-        </script>
     </head>
     <body>
         <main>
             <div class="fade">
+                <a href="/projects/index.html"><button class="return-btn" style="color: var(--text-white);">&#8592;</button></a>
+
                 <section class="section-hero">
-                    <img src="/media/images/iron_compressed.jpg" alt="Iron hero" class="section-hero-image">
+                    <img src="/media/images/iron/iron-on-ironing-board.JPG" alt="Project hero image" class="section-hero__image">
+                    <div class="section-hero__overlay"></div>
+                    <div class="section-hero__content">
+                        <p class="section-hero__subtitle">Human Factors · Usability</p>
+                        <h1 class="section-hero__title">Quicksteam</h1>
+                    </div>
+                </section>
+
+                <section class="section-meta">
                     <div class="container">
-                        <h1 class="section-hero-title">Quicksteam</h1>
-                        <h3 class="section-hero-subtitle">A usability project</h3>
+                        <div class="section-meta__grid">
+                            <div>
+                                <p class="section-meta__item-label">Timeline</p>
+                                <p class="section-meta__item-value">Mar–Jun, 2026</p>
+                            </div>
+                            <div>
+                                <p class="section-meta__item-label">Tools</p>
+                                <p class="section-meta__item-value">Journey mapping, anthropometrics,<br> physical prototyping.</p>
+                            </div>
+                            <div>
+                                <p class="section-meta__item-label">Context</p>
+                                <p class="section-meta__item-value">University project</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-intro section--bg" style="--bg-image: url('/media/images/iron/ironingboard_prototype.jpg')">
+                    <div class="container">
+                        <h2 class="section-intro__question">How can we design an ironing system for less experienced users?</h2>
+                        <p class="section-intro__body">For decades, steam irons have kept a very similar form as the practices of ironing have been maintained. However, for infrequent users who find ironing a chore it can be a frustrating task.</p>
+                    </div>
+                </section>
+
+                <section class="section-text">
+                    <div class="container">
+                        <h2 class="section-text__heading">User Journey Mapping</h2>
+                        <p class="section-text__body">Jamie (21) is a university student living in Melbourne. Busy with a full course load, part-time job, and active social life, Jamie prioritises convenience and efficiency. Ironing is not part of Jamie's regular routine and is reserved for special occasions like presentations, interviews, or formal events. He wants to make a good impression with a quick, but straightforward ironing solution.</p>
+                    </div>
+                </section>
+
+                <section class="section-image-full">
+                    <img src="/media/images/iron/journey_map.jpg" alt="Iron photograph">
+                </section>
+
+                <section class="section-split">
+                    <div class="container">
+                        <div class="section-split__inner">
+                            <div class="section-split__image">
+                                <img src="/media/images/iron/placeholder.jpg" alt="Describe the image">
+                            </div>
+                            <div class="section-split__text">
+                                <h2 class="section-split__heading">Early sketch directions</h2>
+                                <p class="section-split__body">Describe what this image shows and why it matters to the project. What decision does it represent? What were you trying to solve or explore at this stage?</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-text">
+                    <div class="container">
+                        <h2 class="section-text__heading">Physical prototyping</h2>
+                        <p class="section-text__body">What changed between ideation and this stage? Why did certain directions get cut? This is where your judgment as a designer becomes visible.</p>
+                    </div>
+                </section>
+
+                <section class="section-gallery">
+                    <div class="container">
+                        <div class="section-gallery__grid section-gallery__grid--three">
+                            <img src="/media/images/iron/prototype1.jpg" alt="Prototype 1">
+                            <img src="/media/images/iron/prototype2.jpg" alt="Prototype 2">
+                            <img src="/media/images/iron/prototype3.jpg" alt="Prototype 3">
+                            <img src="/media/images/iron/prototype4.jpg" alt="Prototype 4">
+                            <img src="/media/images/iron/prototype5.jpg" alt="Prototype 5">
+                            <img src="/media/images/iron/prototype6.jpg" alt="Prototype 6">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-split section-split">
+                    <div class="container">
+                        <div class="section-split__inner">
+                            <div class="section-split__image">
+                                <img src="/media/images/iron/placeholder.jpg" alt="Describe the image">
+                            </div>
+                            <div class="section-split__text">
+                                <h2 class="section-split__heading">Refining the form</h2>
+                                <p class="section-split__body">What changed between ideation and this stage? Why did certain directions get cut? This is where your judgment as a designer becomes visible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-image-full">
+                    <img src="/media/images/iron/hero_unedited.jpg" alt="Iron photograph">
+                </section>
+
+                <section class="section-callout">
+                    <div class="container">
+                        <div class="section-callout__inner">
+                            <div class="section-callout__rule"></div>
+                            <div>
+                                <p class="section-callout__label">Key Insight</p>
+                                <p class="section-callout__quote">"Less experienced users don't fail at ironing — they fail at knowing when to stop. The interface should make progress legible, not just possible."</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-text">
+                    <div class="container">
+                        <h2 class="section-text__heading">Outcome</h2>
+                        <p class="section-text__body">What did the project produce? What would you do differently? What did you learn that carries into your next project? A brief, honest reflection reads far better than a polished summary that pretends everything went to plan.</p>
+                    </div>
+                </section>
+
+                <section class="section-next">
+                    <div class="container">
+                        <p class="section-next__label">Next Project</p>
+                        <a href="/projects/next-project.html" class="section-next__link">
+                            Project Name <span class="section-next__arrow">→</span>
+                        </a>
                     </div>
                 </section>
             </div>
         </main>
 
-        <script src="/components.js"></script>
         <script src="/main.js"></script>
     </body>
 </html>

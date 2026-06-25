@@ -2,10 +2,10 @@
 /*                       IMPORTS                            */
 /* ######################################################## */
 
-@import url('reset.css');
-@import url('variables.css');
-@import url('base.css');
-@import url('sections.css');
+@import url('/css/reset.css');
+@import url('/css/variables.css');
+@import url('/css/base.css');
+@import url('/css/sections.css');
 
 /* ######################################################## */
 /*                       INITIAL                            */
